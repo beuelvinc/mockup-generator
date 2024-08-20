@@ -3,8 +3,8 @@
 
 from PIL import Image, ImageFont
 
-template = Image.open('template.jpg')
-image = Image.open('image.jpg')
+template = Image.open('./images/templates/template.jpg')
+image = Image.open('./images/image.jpg')
 
 width, height = template.size
 image = image.resize((783, 982))
@@ -18,4 +18,4 @@ y = 300
 
 mockup.paste(image, (x, y))
 
-mockup.save('mockup_from_solution1.png')
+mockup.save('./images/outputs/mockup_from_solution1.png')

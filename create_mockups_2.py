@@ -113,6 +113,6 @@ class MockupGenerator:
         return final_image
     
 
-mockup = MockupGenerator('template2.jpg', 'image.jpg')
+mockup = MockupGenerator('./images/templates/template2.jpg', './images/image.jpg')
 
-final_image = mockup.create_mockup('mockup_from_solution2.png')
+final_image = mockup.create_mockup('./images/outputs/mockup_from_solution2.png')
